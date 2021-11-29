@@ -14,7 +14,7 @@ with open(filename,"r") as csvfile:
 
   for row in csvreader:
     rows.append(row)
-    
+
   print("Number of rows: %d"%(csvreader.line_num))
 
 print('Fields :' + ', '.join(field for field in fields)) #general convention probably stupid    
@@ -40,7 +40,7 @@ for i in range(len(fields)):
         print('\n')
 
     for col in rows[tIndex]:
-        print("%10s"%col),  #through python lamb sacrafice   we parse the collums
+        print("%10s"%col),
         val = "%10s"%col
-        temperatures.append(val) #hopefully lets us use the values as numbers and not strings
+        temperatures.append(val)
         print('\n')
