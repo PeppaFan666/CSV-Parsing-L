@@ -14,9 +14,10 @@ with open(filename,"r") as csvfile:
 
   for row in csvreader:
     rows.append(row)
-  print("Total no. of rows: %d"%(csvreader.line_num))
+    
+  print("Number of rows: %d"%(csvreader.line_num))
 
-print('Field names are:' + ', '.join(field for field in fields)) #general convention probably stupid    
+print('Fields :' + ', '.join(field for field in fields)) #general convention probably stupid    
 
 #this might be because fields cant be auto used as iterators i cry i cry i cry
 
